@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupplyGuard AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <button class="clear-button" onclick="clearChat()">Clear Chat</button>
+            <h1>SupplyGuard AI</h1>
+            <p>Your dedicated platform assistant</p>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span>Online</span>
+            </div>
+        </div>
+        
+        <div class="messages-container" id="messagesContainer">
+            <div class="message bot">
+                <div class="message-content">
+                    <div class="welcome-message">
+                        <h3>Welcome to SupplyGuard AI</h3>
+                        <p>I'm your dedicated platform assistant, here to help you navigate SupplyGuard's features and analyze your supply chain data.</p>
+                        
+                        <strong>I can only help with SupplyGuard platform questions:</strong>
+                        <ul>
+                            <li><strong>Dashboard</strong> - metrics, charts, time filters</li>
+                            <li><strong>Suppliers</strong> - risk scores, filtering, management</li>
+                            <li><strong>Alerts</strong> - monitoring, categories, prioritization</li>
+                            <li><strong>Reports</strong> - generation, templates, exports</li>
+                            <li><strong>Tariff Calculator</strong> - import/export calculations</li>
+                        </ul>
+                        
+                        <strong>Try asking me:</strong>
+                        <ul>
+                            <li>"How do I filter suppliers by risk level?"</li>
+                            <li>"What do the dashboard time filters do?"</li>
+                            <li>"How do I generate a risk assessment report?"</li>
+                            <li>"How many critical suppliers do I have?"</li>
+                        </ul>
+                        
+                        <p>I cannot answer questions about other platforms or general business topics. What would you like to know about SupplyGuard?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <form class="input-form" id="chatForm">
+                <input 
+                    type="text" 
+                    class="message-input" 
+                    id="messageInput" 
+                    placeholder="Type your message..."
+                    autocomplete="off"
+                >
+                <button type="submit" class="send-button" id="sendButton">
+                    <svg class="send-icon" viewBox="0 0 24 24">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html> 
