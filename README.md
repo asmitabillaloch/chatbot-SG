@@ -61,18 +61,6 @@ KEY FEATURES:
 - Restricted AI responses (only SupplyGuard topics)
 - Real-time chat interface
 
-FILES STRUCTURE:
-----------------
-chatbot-standalone-python/
-├── app.py                 # Flask server with LangChain
-├── requirements.txt       # Python dependencies
-├── .env                  # API key (DEEPSEEK_API_KEY)
-├── templates/
-│   └── index.html        # Chatbot interface
-└── static/
-    ├── css/styles.css    # Styling
-    └── js/chatbot.js     # Frontend logic
-
 HOW TO RUN:
 -----------
 1. Install Python dependencies: pip install -r requirements.txt
