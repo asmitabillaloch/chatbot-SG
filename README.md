@@ -1,9 +1,9 @@
-SUPPLYGUARD CHATBOT ASSIGNMENT
-================================
+SUPPLYGUARD CHATBOT 
+===================
 
 WHAT WE BUILT:
 ---------------
-A standalone AI chatbot for SupplyGuard, a supply chain risk management platform. 
+A AI chatbot for SupplyGuard, a supply chain risk management platform. 
 The chatbot can answer questions about the platform's features, dashboard, suppliers, 
 alerts, reports, and tariff calculations.
 
@@ -55,7 +55,7 @@ WORKFLOW:
 
 KEY FEATURES:
 -------------
-- Professional UI with typing indicators
+- UI with typing indicators
 - Message persistence (saves chat history)
 - Fallback responses for common queries
 - Restricted AI responses (only SupplyGuard topics)
